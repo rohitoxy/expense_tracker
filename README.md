@@ -1,4 +1,4 @@
-# expense_tracker#  Expense Tracker
+#  Expense Tracker
 
 An expense tracking application built with Node.js, Express.js, HTML, CSS, and JavaScript.
 
