@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1780378311158,
+    "title": "mandhi",
+    "amount": "500",
+    "category": "Food",
+    "date": "2026-06-02",
+    "note": "full"
+  },
+  {
+    "id": 1780378772003,
+    "title": "mandi",
+    "amount": "500",
+    "category": "Food",
+    "date": "2026-06-02",
+    "note": "full"
+  },
+  {
+    "id": 1780379025351,
+    "title": "uber",
+    "amount": "200",
+    "category": "Transport",
+    "date": "2026-06-02",
+    "note": "auto"
+  },
+  {
+    "id": 1780379377268,
+    "title": "biriyani",
+    "amount": "200",
+    "category": "Food",
+    "date": "2026-06-02",
+    "note": "chicken\n"
+  },
+  {
+    "id": 1780379396373,
+    "title": "Bus",
+    "amount": "150",
+    "category": "Transport",
+    "date": "2026-06-02",
+    "note": ""
+  },
+  {
+    "id": 1780379421070,
+    "title": "Mobile",
+    "amount": "20000",
+    "category": "Shopping",
+    "date": "2026-05-28",
+    "note": ""
+  },
+  {
+    "id": 1780380365165,
+    "title": "ice cream",
+    "amount": "2000",
+    "category": "Food",
+    "date": "2026-05-01",
+    "note": ""
+  },
+  {
+    "id": 1780380432857,
+    "title": "prime",
+    "amount": "200",
+    "category": "Entertainment",
+    "date": "2026-06-02",
+    "note": ""
+  },
+  {
+    "id": 1780380445228,
+    "title": "spotify",
+    "amount": "500",
+    "category": "Entertainment",
+    "date": "2026-06-02",
+    "note": ""
+  },
+  {
+    "id": 1780380457787,
+    "title": "yt premium",
+    "amount": "2000",
+    "category": "Entertainment",
+    "date": "2026-06-02",
+    "note": ""
+  },
+  {
+    "id": 1780380475720,
+    "title": "train",
+    "amount": "8000",
+    "category": "Transport",
+    "date": "2026-06-02",
+    "note": ""
+  }
+]

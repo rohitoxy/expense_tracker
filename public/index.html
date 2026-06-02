@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Analytics Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <h1> Expense Tracker</h1>
+
+    <!-- DASHBOARD CARDS -->
+
+    <div class="dashboard-cards">
+
+        <div class="card">
+            <h3>Total Expenses</h3>
+            <p id="totalExpense">₹0</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Transactions</h3>
+            <p id="totalTransactions">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Top Category</h3>
+            <p id="topCategory">-</p>
+        </div>
+
+    </div>
+
+    <!-- FORM -->
+
+    <form id="expenseForm">
+
+        <input type="text" id="title" placeholder="Title" required>
+
+        <input type="number" id="amount" placeholder="Amount" required>
+
+        <select id="category">
+            <option>Food</option>
+            <option>Transport</option>
+            <option>Shopping</option>
+            <option>Bills</option>
+            <option>Entertainment</option>
+            <option>Other</option>
+        </select>
+
+        <input type="date" id="date">
+
+        <textarea id="note" placeholder="Note"></textarea>
+
+        <button type="submit">
+            Add Expense
+        </button>
+
+    </form>
+
+    <hr>
+
+    <!-- FILTERS -->
+
+    <h2>Filters</h2>
+
+    <div class="filter-card">
+
+        <input type="text" id="searchTitle" placeholder="Search Title">
+
+        <select id="filterCategory">
+            <option value="">All Categories</option>
+            <option>Food</option>
+            <option>Transport</option>
+            <option>Shopping</option>
+            <option>Bills</option>
+            <option>Entertainment</option>
+            <option>Other</option>
+        </select>
+
+        <input type="date" id="fromDate">
+
+        <input type="date" id="toDate">
+
+        <button type="button" onclick="loadExpenses()">
+            Apply Filters
+        </button>
+
+    </div>
+
+    <hr>
+
+    <!-- SUMMARY -->
+
+    <h2>Monthly Summary</h2>
+
+    <div id="summary"></div>
+
+    <hr>
+
+    <!-- CHARTS -->
+
+    <h2>Analytics</h2>
+
+    <div class="chart-container">
+
+        <div class="chart-card">
+            <canvas id="categoryChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <canvas id="monthlyChart"></canvas>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- TABLE -->
+
+    <h2>Expenses</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Note</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="expenseList">
+
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
