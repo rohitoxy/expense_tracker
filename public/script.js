@@ -10,6 +10,34 @@ document.getElementById("date").value =
 form.addEventListener("submit", async function (e) {
 
     e.preventDefault();
+    const title =
+        document.getElementById("title")
+            .value
+            .trim();
+
+    if (!title) {
+
+        alert(
+            "Title is required"
+        );
+
+        return;
+    }
+
+    const amount =
+        Number(
+            document.getElementById("amount")
+                .value
+        );
+
+    if (amount <= 0) {
+
+        alert(
+            "Amount must be greater than 0"
+        );
+
+        return;
+    }
 
     const expense = {
         title: document.getElementById("title").value,
